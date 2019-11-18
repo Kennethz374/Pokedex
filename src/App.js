@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import Pokecard from "./Pokecard"
 import './App.css';
 
 function App() {
   return (
     <>
-      <Pokecard/>
+      <Pokecard
+      id={4}
+      name="Charmander"
+      type="fire"
+      exp="62"
+      />
     </>
   );
 }
