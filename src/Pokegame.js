@@ -1,6 +1,7 @@
 import React from "react";
 import Pokedex from "./Pokedex"
 export default function Pokegame(props) {
+//game logic
   let player1 = [];
   let player2 = [...props.pokemon];
   while(player1.length < player2.length) {
@@ -8,10 +9,13 @@ export default function Pokegame(props) {
     let randomPokemon = player2.splice(randomId, 1)[0]; //return an array with single object so need to put [0]
     player1.push(randomPokemon);
   }
+
+  let exp1 = player1.reduce((exp,pokemon) => exp + pokemon.base_experience, 0);
+  let exp2 = player2.reduce((exp,pokemon) => exp + pokemon.base_experience, 0);
   return (
     <div>
-      <Pokedex pokemon= {player1} />
-      <Pokedex pokemon= {player2} />
+      <Pokedex pokemon= {player1} exp={exp1} isWinner={exp1 > exp2} />
+      <Pokedex pokemon= {player2} exp={exp2} isWinner={exp2 > exp1} />
     </div>
   )
 }
