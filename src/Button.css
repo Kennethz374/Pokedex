@@ -1,0 +1,15 @@
+.Button {
+  text-align:center;
+  color:black;
+  padding:10px;
+  margin:5px;
+}
+
+.Button-text {
+  color:black;
+  width:250px;
+  height:25px;
+  background-color: lightcoral;
+  border-radius:10px;
+  box-shadow: 7px 10px 12px -5px rgba(0,0,0,.56);
+}

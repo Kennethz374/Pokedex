@@ -1,5 +1,6 @@
 import React from "react";
 import Pokedex from "./Pokedex"
+import Button from "./Button"
 export default function Pokegame(props) {
 //game logic
   let player1 = [];
@@ -14,6 +15,7 @@ export default function Pokegame(props) {
   let exp2 = player2.reduce((exp,pokemon) => exp + pokemon.base_experience, 0);
   return (
     <div>
+      <Button/>
       <Pokedex pokemon= {player1} exp={exp1} isWinner={exp1 > exp2} />
       <Pokedex pokemon= {player2} exp={exp2} isWinner={exp2 > exp1} />
     </div>
