@@ -13,4 +13,4 @@ every time it refreshes, server will randomly assign two sets of Pokedex. The pl
 
 !["Sample game screen shot 2"](https://github.com/Kennethz374/Pokedex/blob/master/public/Screen%20Shot%202019-11-20%20at%201.30.42%20AM.png?raw=true)
 
-
+!["Sample game screen shot 3"](https://github.com/Kennethz374/Pokedex/blob/master/public/PokeDex.gif?raw=true)
